@@ -1,0 +1,170 @@
+R&D@RD MINGW64 /
+$ pwd
+/
+
+R&D@RD MINGW64 /
+$ cd
+
+R&D@RD MINGW64 ~
+$ cd Desktop
+
+R&D@RD MINGW64 ~/Desktop (master)
+$ ls
+'@instagram.PNG'               gitbash/    'my.org snip1.PNG'   xyz.txt
+ 123abc.txt                    gitbasics/   sample.txt
+ desktop.ini                   kvsw/        sample1.txt
+'Git-2.23.0-64-bit (1).exe'*   mmo.txt      snips/
+
+R&D@RD MINGW64 ~/Desktop (master)
+$ cd gitbasics
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git init
+Initialized empty Git repository in C:/Users/R&D/Desktop/gitbasics/.git/
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.name MythiliB0
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git config user.email "mythilisureshrao@gmail.com"
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git remove add gitbasics https://github.com/MythiliB0/git-basics
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/MythiliB0/git-basics
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ remote -v
+bash: remote: command not found
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git remote -v
+gitbasics       https://github.com/MythiliB0/git-basics (fetch)
+gitbasics       https://github.com/MythiliB0/git-basics (push)
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ touch efg.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ nano efg.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ cat efg.txt
+hello villege
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git add efg.txt
+warning: LF will be replaced by CRLF in efg.txt.
+The file will have its original line endings in your working directory
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   efg.txt
+
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ touch xyz.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ nano xyz.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   efg.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        xyz.txt
+
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git add xyz.txt
+warning: LF will be replaced by CRLF in xyz.txt.
+The file will have its original line endings in your working directory
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ ls
+efg.txt  xyz.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   efg.txt
+        new file:   xyz.txt
+
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git commit -m "checking"
+[master (root-commit) ed530df] checking
+ 2 files changed, 2 insertions(+)
+ create mode 100644 efg.txt
+ create mode 100644 xyz.txt
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git push -u gitbasics master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 274 bytes | 274.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/MythiliB0/git-basics
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics'.
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git log
+commit ed530df763657de0a2b953364c4549c4662e380c (HEAD -> master, gitbasics/master)
+Author: MythiliB0 <mythilisureshrao@gmail.com>
+Date:   Fri Aug 30 14:43:30 2019 +0530
+
+    checking
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$ git pull gitbasics master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/MythiliB0/git-basics
+ * branch            master     -> FETCH_HEAD
+   ed530df..37b7c36  master     -> gitbasics/master
+Updating ed530df..37b7c36
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+R&D@RD MINGW64 ~/Desktop/gitbasics (master)
+$

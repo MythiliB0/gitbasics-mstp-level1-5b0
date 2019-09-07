@@ -1,0 +1,59 @@
+R&D@RD MINGW64 ~
+$ pwd
+/c/Users/R&D
+
+R&D@RD MINGW64 ~
+$ cd desktop
+
+R&D@RD MINGW64 ~/desktop
+$ ls snips
+'$instagram.PNG'  '@instagram.PNG'  'related .PNG'
+'$laptops.PNG'    'related .com'*
+
+R&D@RD MINGW64 ~/desktop
+$ touch sample.txt
+
+R&D@RD MINGW64 ~/desktop
+$ cat sample.txt
+
+R&D@RD MINGW64 ~/desktop
+$ nano sample.txt
+
+R&D@RD MINGW64 ~/desktop
+$ cat sample.txt
+3289y5i23yroi
+ruoiwieyriowe
+erhiuwegtkjligykweeh
+
+R&D@RD MINGW64 ~/desktop
+$ touch sample1.txt
+
+R&D@RD MINGW64 ~/desktop
+$ ls
+'@instagram.PNG'               kvsw/               sample1.txt
+ desktop.ini                  'my.org snip1.PNG'   snips/
+'Git-2.23.0-64-bit (1).exe'*   sample.txt
+
+R&D@RD MINGW64 ~/desktop
+$ cp sample.txt sample1.txt
+
+R&D@RD MINGW64 ~/desktop
+$ cat sample1.txt
+3289y5i23yroi
+ruoiwieyriowe
+erhiuwegtkjligykweeh
+
+R&D@RD MINGW64 ~/desktop
+$ touch 123abc.txt
+
+R&D@RD MINGW64 ~/desktop
+$ echo python
+python
+
+R&D@RD MINGW64 ~/desktop
+$ echo "hello world"
+hello world
+
+
+R&D@RD MINGW64 ~/desktop
+$

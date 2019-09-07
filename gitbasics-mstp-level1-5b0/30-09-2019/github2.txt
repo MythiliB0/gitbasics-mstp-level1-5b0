@@ -1,0 +1,245 @@
+R&D@RD MINGW64 ~
+$ pwd
+/c/Users/R&D
+
+R&D@RD MINGW64 ~
+$ cd desktop
+
+R&D@RD MINGW64 ~/desktop (master)
+$ cd versioncontrol
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ ls
+workflow-of-version-control.pdf
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git init
+Initialized empty Git repository in C:/Users/R&D/Desktop/versioncontrol/.git/
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git user.name MythiliBo
+git: 'user.name' is not a git command. See 'git --help'.
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git user.name "MythiliB0"
+git: 'user.name' is not a git command. See 'git --help'.
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.name"MythiliB0"
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.email "mythilisureshrao@gmail.com"
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git remote add gitbasics https://github.com/MythiliB0/gitbasics2
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git remote -v
+gitbasics       https://github.com/MythiliB0/gitbasics2 (fetch)
+gitbasics       https://github.com/MythiliB0/gitbasics2 (push)
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        workflow-of-version-control.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git add workflow-of-version-control.pdf
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "read"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <mythilisureshrao@gmail.com>) not allowed
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "read"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <mythilisureshrao@gmail.com>) not allowed
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "check"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <mythilisureshrao@gmail.com>) not allowed
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "update"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <mythilisureshrao@gmail.com>) not allowed
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.name MythiliB0
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git config user.email "mythilisureshrao@gmail.com"
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git remote add gitbasics2
+
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git remote add gitbasics2 https://github.com/MythiliB0/gitbasics2
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git remote -v
+gitbasics       https://github.com/MythiliB0/gitbasics2 (fetch)
+gitbasics       https://github.com/MythiliB0/gitbasics2 (push)
+gitbasics2      https://github.com/MythiliB0/gitbasics2 (fetch)
+gitbasics2      https://github.com/MythiliB0/gitbasics2 (push)
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workflow-of-version-control.pdf
+
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git commit -m "update"
+[master (root-commit) efef5fb] update
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 workflow-of-version-control.pdf
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git log
+commit efef5fbecd26e2ce2c806130db24530549fea89a (HEAD -> master)
+Author: MythiliB0 <mythilisureshrao@gmail.com>
+Date:   Fri Aug 30 16:11:26 2019 +0530
+
+    update
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git push -u gitbasics2 master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 539.90 KiB | 28.42 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MythiliB0/gitbasics2
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics2'.
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$ git pull gitbasics2
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/MythiliB0/gitbasics2
+   efef5fb..b42dd4d  master     -> gitbasics2/master
+Updating efef5fb..b42dd4d
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+R&D@RD MINGW64 ~/desktop/versioncontrol (master)
+$
